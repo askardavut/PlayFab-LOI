@@ -35,4 +35,9 @@ public class Login : MonoBehaviour
         yield return new WaitUntil(() => _loginBase.LoginBase_Async);
         SceneManager.LoadScene(1);
     }
+
+    public void LoginGuestOnClick()
+    {
+        _loginBase.LoginGuest();
+    }
 }

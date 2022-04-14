@@ -31,6 +31,7 @@ public class GetAccoundInfoController
                 Email = Result.AccountInfo.PrivateInfo.Email;
                 AvatarURL = Result.AccountInfo.TitleInfo.AvatarUrl;
                 IsBan = Result.AccountInfo.TitleInfo.isBanned.Value;
+                
 
 
                 GetAccoundInfoController_Async = true;

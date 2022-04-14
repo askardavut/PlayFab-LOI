@@ -24,5 +24,27 @@ public class LoginBase
                 LoginBase_Async = false;
                 Debug.Log("Giriþ Hatasý !!!!!!!!!!");
             });
+
+
+
     }
+
+    public void LoginGuest()
+    {
+        PlayFabClientAPI.LoginWithCustomID(new LoginWithCustomIDRequest()
+        {
+            CreateAccount = true, CustomId ="Misafir Girisi", TitleId = PlayFabSettings.TitleId
+        },
+
+            Success =>
+            {
+                Debug.Log("Misafir Giriþi Baþarýlý");
+            },
+            Error =>
+            {
+                Debug.Log("Misafir Giriþ Yapamadý");
+            });
+    }
+
+
 }

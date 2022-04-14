@@ -24,6 +24,8 @@ public class UpdateDisplayname : MonoBehaviour
         {
             Debug.Log("DisplayNameGüncellenemedi");
         });
+
+        
     }
 
 }
