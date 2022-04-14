@@ -33,7 +33,7 @@ public class LoginBase
     {
         PlayFabClientAPI.LoginWithCustomID(new LoginWithCustomIDRequest()
         {
-            CreateAccount = true, CustomId ="Misafir Girisi", TitleId = PlayFabSettings.TitleId
+            CreateAccount = true, CustomId ="Misafir Girisi", 
         },
 
             Success =>
